@@ -1,0 +1,337 @@
+body {
+	font-family: "Trebuchet MS", sans-serif;
+	background-color: #033949;
+}
+header {
+	text-align: center;
+}
+h1 {
+	font-size: 3em;
+	text-shadow: 2px 2px 2px gray;
+	color: white;
+}
+.main_title {
+	margin-top: 30px;
+	font-style: italic;
+	text-indent: 270px;
+}
+.main_title h2 {
+	margin-bottom: 0px;
+	color: white;
+}
+.sidebar {
+	position: absolute;
+	top: 83px;
+	left: 140px;	
+}
+.logo {
+	width: 126px;
+	padding-bottom: 10px;
+}
+nav {
+	width: 126px;
+	border: 2px solid lawngreen;
+	background-color: #033949;
+	text-align: center;
+}
+nav a {
+	display: block;
+	border: 2px solid lawngreen;
+	padding: 7px;
+	color: ghostwhite;
+	text-decoration: none;
+	margin: 10px;
+}
+nav a:hover {
+	background-color: lawngreen;
+	color: #033949;
+}
+nav a.current {
+	background-color: lawngreen;
+	color: #033949;
+}
+.text {
+	border: 2px solid lawngreen;
+	margin: 0 200px 0 200px;
+	padding: 30px 80px 30px 115px;
+	background-color: white;
+	height: 470px;
+	color: #3d3d3f;
+}
+.rules, .game_info, .registration, .data {
+	overflow-y: scroll;
+}
+.text p {
+	margin-top: 5px;
+}
+.text h3 {
+	border-bottom: 2px dotted #3d3d3f;
+	margin-bottom: 5px;
+}
+.text h4 {
+	font-weight: normal;
+	text-decoration: underline;
+	margin: 20px 0 0 0;
+}
+.text h5 {
+	font-size: 1em;
+	margin: 20px 0 0 0;
+}
+footer {
+	font-size: 2.5em;
+	color: lawngreen;
+	text-align: center;
+	height: auto;
+}
+footer p {
+	margin: 20px;
+}
+.home {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 80px 10px 115px;
+}
+.home_img {
+	height: 250px;
+	margin-left: 100px;
+	border: 2px solid lawngreen;
+	vertical-align: middle;
+}
+.single_event {
+	text-indent: 20px;
+	font-style: italic;
+}
+.contact {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+.contact img {
+	margin-top: 40px;
+	width: 80%;
+ 	height: 270px;
+	border: 2px solid lawngreen;
+}
+.rules p {
+	text-indent: 40px;
+}
+.rules ul {
+	margin-top: 0;
+	list-style-type: square;
+}
+.rules ul ul {
+	list-style-type: circle;
+}
+.rules ol {
+	margin-top: 0;
+}
+.number_ol {
+	font-weight: bold;
+}
+.number_ol p {
+	display: inline;
+	font-weight: normal;
+}
+.number_ol>li {
+	margin-bottom: 20px;
+}
+.rules ol ol {
+	list-style-type: lower-latin;
+	font-weight: normal;
+}
+.ul_title {
+	display: inline;
+	font-weight: bold;
+}
+.game_info h5 {
+	font-style: italic;
+	font-size: 1.3em;
+	text-align: center;
+}
+.asterisk {
+	font-style: italic;
+	text-decoration: underline;
+	text-align: center;
+}
+.fall_schedule {
+	border-collapse: collapse;
+	margin: 0 auto 30px auto;
+}
+.fall_schedule th {
+	border: 1px dashed #3d3d3f;
+}
+.fall_schedule tr th:not(:first-child) {
+	text-align: left;
+}
+.fall_schedule td, .fall_schedule th {
+	border: 1px dashed #3d3d3f;
+	padding: 0 10px 0 10px;
+}
+.fall_schedule tbody tr:first-child td:first-child {
+	vertical-align: top;
+	text-align: center;
+	width: 127px;
+}
+.fall_schedule tbody:hover {
+	background-color: #EAE1FE;
+}
+.locations {
+	display: flex;
+	justify-content: center;
+}
+.locations_table {
+	margin-bottom: 30px;
+	border-collapse: collapse;
+}
+.locations_table td {
+	padding: 0 30px 0 10px;
+}
+.locations_table tr:nth-child(odd) {
+	background-color: #EAE1FE;
+}
+.locations_table tr:nth-child(even) {
+	background-color: #EBFEC9;
+}
+.locations_table a {
+	color: #3d3d3f;
+}
+caption {
+	text-align: left;
+	font-weight: bold;
+	text-indent: 10px;
+	padding-bottom: 5px;
+}
+.game_info_details p {
+	display: inline;
+	padding-right: 40px;
+}
+.details_title, .permission h4 {
+	font-weight: bold;
+}
+label {
+	padding-bottom: 20px;
+}
+.subform {
+	display: flex;
+}
+.subform label {
+	display: flex;
+	flex-grow: 1;
+	margin-right: 20px;
+}
+.subform label input {
+	flex-grow: 1;
+	margin-left: 5px;
+}
+.birth_gender p, .grade p {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.birth_gender input[type="date"] { 
+	margin-right: 70px;
+}
+.checkall {
+	font-weight: normal;
+}
+.signature_and_date {
+	display: flex;
+}
+.signature {
+	flex-grow: 3;
+	display: flex;
+}
+.date {
+	flex-grow: 1;
+	display: flex;
+	margin-left: 10px;
+}
+.signature textarea, .date textarea {
+	flex-grow: 1;
+	margin-left: 5px;
+}
+.form_question {
+	margin-bottom: 10px;
+	font-weight: bold;
+	display: block;
+}
+.uniform {
+	margin: 20px 0 10px 0;
+	font-weight: bold;
+}
+p.form_question {
+	margin-top: 20px;
+}
+.schools {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
+.schools label {
+	padding-right: 30px;
+	font-weight: bold;
+}
+.position {
+	display: flex;
+	flex-flow: column wrap;
+	height: 49px;
+	align-content: flex-start;
+}
+.position label, .size label {
+	padding: 0 0 0 20px;
+}
+.all_sizes {
+	display: flex;
+	justify-content: space-between;
+	width: 500px;
+}
+.size {
+	display: flex;
+	flex-flow: column wrap;
+	height: 80px;
+	align-content: flex-start;
+}
+input[type="submit"] {
+	display: block;
+	font-weight: bold;
+	padding: 5px;
+	margin: 20px auto 0 auto;
+	border: 2px solid lawngreen;
+	background-color: #033949;
+	color: white;
+}
+.data {
+	text-align: center;
+}
+.data h5 {
+	padding-bottom: 10px;
+	line-height: 1.5em;
+}
+.data a {
+	line-height: 3em;
+}
+.all_maps {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.all_maps iframe {
+	border: 2px solid #3d3d3f;
+	width: 400px;
+	height: 350px;
+}
+.all_maps h4 {
+	text-align: center; 
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 20px 0 15px 0;
+}
+.season {
+	display: flex;
+	margin-bottom: 15px;
+	justify-content: center;
+}
+.season input {
+	margin-left: 15px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>NYSL Registration Form</title>
+	<link rel=stylesheet href="styles/nysl_3.css">
+</head>
+<body>
+	<header>
+		<h1>Northside Youth Soccer League</h1>
+	</header>
+	<div class="main_title">
+		<h2>Registration Form</h2>
+	</div>
+	<div class="sidebar">
+		<img src="./images/nysl_logo.png" class="logo" alt="NYSL logo">
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="about.html">About NYSL</a>
+			<a href="contact.html">Contact</a>
+			<a href="rules.html">Rules &amp; Policies</a>
+			<a href="game_info.html">Game Information</a>
+			<a href="registration.html" class="current">Registration Form</a>
+		</nav>
+	</div>
+	<div class="text data">
+		<p align=center>&nbsp;</p>
+		<h5 align=center><font size="+1">Thank you for filling out the registration form!<br> You have entered the following information:</font></h5>
+		<table border="1" align=center width="300">
+			<tr>
+				<th align="center">Field</th>
+				<th align="center">Value</th>
+			</tr>
+
+		<script language="javascript">
+		var args = location.search.substr(1).split('&');
+		for (var i = 0; i < args.length; ++i) {
+			var parts = args[i].split('=');
+			if (parts != null) {
+				var field = parts[0];
+				var value = parts[1];
+				if (value == null) {
+					value = "null"
+				}
+				else {
+					value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+				}
+
+				document.writeln('<tr><td align="center">' + field + '</td>');
+				document.writeln('<td align="center">' + value + '</td></tr>');
+			}
+		}
+		</script>
+
+		<noscript>
+		<tr><td>
+		<p>You need to turn on Javascript in your browser.</p>
+
+		<p>In Microsoft Internet Explorer 4 or greater:</p>
+		<ul>
+		<li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+		<li>Click on the "Security" tab.</li>
+		<li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+		and then click on "Settings...".)</li>
+		<li>Under "Active scripting" make sure "Enable" is selected.</li>
+		</ul>
+
+		<p>In Netscape version 4 or greater:</p>
+		<ul>
+		<li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+		<li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+		<li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+		<li>Click the <b>OK</b> button.</li>
+		</ul>
+
+		</td></tr>
+		</noscript>
+
+		</table>
+		<a href="index.html">Go back to the Home page</a>
+	</div>
+	<footer>
+	<p>&#9733;</p>
+	</footer>
+</body>
+</html>
+

@@ -1,0 +1,66 @@
+header {
+	background: url("../images/design1_image1.jpg");
+	height: 300px;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: cover;
+}
+body {
+	font-family: "Arial", sans-serif;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	color: white;
+	text-align: center;
+	margin: 0px;
+}
+h3 {
+	margin-bottom: 0px;
+}
+h4 {
+	font-weight: normal;
+	font-style: italic;	
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+.indented {
+	margin-left: 25px;
+	margin-top: 5px;
+	}
+.main_title {
+	background-color: black;
+	position: relative;
+}
+.logo {
+	position: absolute;
+	right: 100px;
+	top: 280px;
+	height: 120px;
+}
+.sidebar {
+	display: inline-block;
+}
+nav {
+	display: inline-block;
+	text-indent: 30px;
+	height: 120px;
+	width: 10%;
+	margin-top: 30px;
+}
+nav a:link, a:visited {
+	display: block;
+	line-height: 60px;
+	color: blue;
+	text-decoration: none;
+}
+nav a.current {
+	text-decoration: underline;
+	font-weight: bold;
+}
+.text {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+}
