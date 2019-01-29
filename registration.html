@@ -23,7 +23,7 @@
 			<a href="#" class="current">Registration Form</a>
 		</nav>
 	</div>
-	<div class="text registration">
+	<div class="text">
 		<form name="registration" action="show_data.html" method="get">
 			<div class="season">
 				Season:
@@ -31,12 +31,12 @@
 			</div>
 			<div class="subform">
 				<label>
-					Player's First Name:
-					<input type="text" name="first_name">
+					First Name:*
+					<input type="text" name="first_name" required autofocus>
 				</label>
 				<label>
-					Last Name:
-					<input type="text" name="last_name">
+					Last Name:*
+					<input type="text" name="last_name" required>
 				</label>
 			</div>
 			<div class="subform">
@@ -57,8 +57,8 @@
 			</div>
 			<div class="birth_gender">
 				<label>
-					Birth Date:
-					<input type="date" name="birth_date" id="bdate">
+					Birth Date:*
+					<input type="date" name="birth_date" id="bdate" required>
 				</label>
 				<p>Gender:</p>
 				<label>
@@ -101,8 +101,8 @@
 						<input type="tel" name="phone">
 					</label>
 					<label>
-						Contact E-mail:
-						<input type="text" name="email">
+						Contact E-mail:*
+						<input type="text" name="email" required>
 					</label>
 				</div>
 			<p class="form_question">Which elementary schools do you live near?</p>
@@ -197,7 +197,7 @@
 				<div>
 				<p class="form_question">Shorts Size:</p>
 				<div class="size">
-				 <label>
+					<label>
 						<input type="radio" name="shorts_size" value="youth_small">Youth Small
 					</label>
 					<label>
@@ -209,13 +209,13 @@
 					<label>
 						<input type="radio" name="shorts_size" value="small">Small
 					</label>
-						<label>
+					<label>
 						<input type="radio" name="shorts_size" value="medium">Medium
 					</label>
-						<label>
+					<label>
 						<input type="radio" name="shorts_size" value="large">Large
 					</label>
-						<label>
+					<label>
 						<input type="radio" name="shorts_size" value="extra_large">Extra Large
 					</label>
 				 </div>
@@ -229,7 +229,7 @@
 			<div class="signature_and_date">
 				<label class="signature">
 					Parent/Guardian Signature:
-					<textarea name="signature" placeholder="Please write your full name"></textarea>
+					<input name="signature" placeholder="Please write your full name">
 				</label>
 				<label class="date">
 					Date:

@@ -1,3 +1,4 @@
+/*Main*/
 body {
 	font-family: "Trebuchet MS", sans-serif;
 	background-color: #033949;
@@ -5,7 +6,7 @@ body {
 header {
 	text-align: center;
 }
-h1 {
+header h1 {
 	font-size: 3em;
 	text-shadow: 2px 2px 2px gray;
 	color: white;
@@ -42,11 +43,7 @@ nav a {
 	text-decoration: none;
 	margin: 10px;
 }
-nav a:hover {
-	background-color: lawngreen;
-	color: #033949;
-}
-nav a.current {
+nav a:hover, nav a.current {
 	background-color: lawngreen;
 	color: #033949;
 }
@@ -57,9 +54,7 @@ nav a.current {
 	background-color: white;
 	height: 470px;
 	color: #3d3d3f;
-}
-.rules, .game_info, .registration, .data {
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 .text p {
 	margin-top: 5px;
@@ -86,6 +81,7 @@ footer {
 footer p {
 	margin: 20px;
 }
+/*Home*/
 .home {
 	display: flex;
 	justify-content: space-between;
@@ -101,6 +97,7 @@ footer p {
 	text-indent: 20px;
 	font-style: italic;
 }
+/*Contact*/
 .contact {
 	display: flex;
 	flex-flow: column wrap;
@@ -113,6 +110,7 @@ footer p {
  	height: 270px;
 	border: 2px solid lawngreen;
 }
+/*Rules*/
 .rules p {
 	text-indent: 40px;
 }
@@ -144,6 +142,7 @@ footer p {
 	display: inline;
 	font-weight: bold;
 }
+/*Game Information*/
 .game_info h5 {
 	font-style: italic;
 	font-size: 1.3em;
@@ -209,6 +208,24 @@ caption {
 .details_title, .permission h4 {
 	font-weight: bold;
 }
+.all_maps {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.all_maps iframe {
+	border: 2px solid #3d3d3f;
+	width: 400px;
+	height: 350px;
+}
+.all_maps h4 {
+	text-align: center; 
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 20px 0 15px 0;
+}
+/*Registration Form*/
 label {
 	padding-bottom: 20px;
 }
@@ -246,7 +263,7 @@ label {
 	display: flex;
 	margin-left: 10px;
 }
-.signature textarea, .date textarea {
+.signature input {
 	flex-grow: 1;
 	margin-left: 5px;
 }
@@ -300,6 +317,15 @@ input[type="submit"] {
 	background-color: #033949;
 	color: white;
 }
+.season {
+	display: flex;
+	margin-bottom: 15px;
+	justify-content: center;
+}
+.season input {
+	margin-left: 15px;
+}
+/*Show data from form*/
 .data {
 	text-align: center;
 }
@@ -309,29 +335,4 @@ input[type="submit"] {
 }
 .data a {
 	line-height: 3em;
-}
-.all_maps {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-.all_maps iframe {
-	border: 2px solid #3d3d3f;
-	width: 400px;
-	height: 350px;
-}
-.all_maps h4 {
-	text-align: center; 
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 1.2em;
-	padding: 20px 0 15px 0;
-}
-.season {
-	display: flex;
-	margin-bottom: 15px;
-	justify-content: center;
-}
-.season input {
-	margin-left: 15px;
 }
